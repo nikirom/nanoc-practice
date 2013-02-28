@@ -22,9 +22,15 @@ compile '*' do
     # don’t filter binary items
   else
    case item[:extensuin]
-    when 'haml'
-     filter :haml
+    when 'md'
+     filter :redcarpet, :options => {:fenced_code_blocks => true}
      layout 'default'
+#    when 'html'
+#     filter :erb
+#     layout 'default'
+#    when 'haml'
+#     filter :haml
+#     layout 'default'
     when 'sass'
      filter :sass
    end
@@ -48,4 +54,4 @@ route '*' do
   end
 end
 
-layout '*', :erb
+layout '*', :haml
