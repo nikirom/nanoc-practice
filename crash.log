@@ -1,51 +1,57 @@
-Crashlog created at 2013-02-28 16:04:46 +0900
+Crashlog created at 2013-03-14 12:51:01 +0900
 
 ===== MESSAGE:
 
-TypeError: can't convert String into Hash
+Haml::SyntaxError: Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.
 
 ===== COMPILATION STACK:
 
-  (empty)
+  - [item]   /test/ (rep default)
 
 ===== STACK TRACE:
 
-  0. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/data_sources/filesystem.rb:102:in `merge'
-  1. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/data_sources/filesystem.rb:102:in `block in load_objects'
-  2. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/data_sources/filesystem.rb:78:in `each'
-  3. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/data_sources/filesystem.rb:78:in `map'
-  4. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/data_sources/filesystem.rb:78:in `load_objects'
-  5. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/data_sources/filesystem.rb:37:in `items'
-  6. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:325:in `block in load_items'
-  7. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:324:in `each'
-  8. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:324:in `load_items'
-  9. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:243:in `load'
-  10. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:127:in `layouts'
-  11. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:186:in `dependency_tracker'
-  12. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/memoization.rb:56:in `block in memoize'
-  13. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:455:in `stores'
-  14. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:145:in `unload'
-  15. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:274:in `unload'
-  16. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:254:in `rescue in load'
-  17. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:258:in `load'
-  18. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:63:in `load_site'
-  19. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/commands/compile.rb:319:in `run'
-  20. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:14:in `block in call'
-  21. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  22. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  23. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:13:in `call'
-  24. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
-  25. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
-  26. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
-  27. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
-  28. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
-  29. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:52:in `block in run'
-  30. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  31. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  32. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:50:in `run'
-  33. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/bin/nanoc:19:in `<top (required)>'
-  34. /usr/local/bin/nanoc:19:in `load'
-  ... 37 more lines omitted. See full crash log for details.
+  0. layout /default/:10
+  1. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:175:in `block in tabs'
+  2. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:153:in `instance_eval'
+  3. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:153:in `tabs'
+  4. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:752:in `block_opened?'
+  5. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:389:in `tag'
+  6. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:412:in `div'
+  7. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:213:in `process_line'
+  8. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:122:in `parse'
+  9. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/engine.rb:66:in `initialize'
+  10. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/filters/haml.rb:23:in `new'
+  11. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/filters/haml.rb:23:in `run'
+  12. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  13. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/result_data/item_rep.rb:401:in `layout'
+  14. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  15. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
+  16. ./Rules:27:in `block in load'
+  17. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  18. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  19. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
+  20. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
+  21. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
+  22. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
+  23. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  24. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  25. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/commands/compile.rb:325:in `run'
+  26. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  27. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  28. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  29. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:13:in `call'
+  30. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  31. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  32. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  33. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  34. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  35. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:52:in `block in run'
+  36. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  37. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  38. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:50:in `run'
+  39. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/bin/nanoc:19:in `<top (required)>'
+  40. /usr/local/bin/nanoc:19:in `load'
+  ... 43 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
@@ -87,8 +93,8 @@ PATH => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 PWD => "/home/mori/test"
 SHELL => "/bin/bash"
 SHLVL => "1"
-SSH_CLIENT => "192.168.10.41 51641 22"
-SSH_CONNECTION => "192.168.10.41 51641 192.168.10.111 22"
+SSH_CLIENT => "192.168.10.41 53333 22"
+SSH_CONNECTION => "192.168.10.41 53333 192.168.10.111 22"
 SSH_TTY => "/dev/pts/0"
 TERM => "xterm"
 USER => "mori"
@@ -100,11 +106,14 @@ _ => "/usr/local/bin/nanoc"
   1. /var/lib/gems/1.9.1/gems/colored-1.2/lib
   2. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib
   3. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib
-  4. /usr/local/lib/site_ruby/1.9.1
-  5. /usr/local/lib/site_ruby/1.9.1/i686-linux
-  6. /usr/local/lib/site_ruby
-  7. /usr/lib/ruby/vendor_ruby/1.9.1
-  8. /usr/lib/ruby/vendor_ruby/1.9.1/i686-linux
-  9. /usr/lib/ruby/vendor_ruby
-  10. /usr/lib/ruby/1.9.1
-  11. /usr/lib/ruby/1.9.1/i686-linux
+  4. /var/lib/gems/1.9.1/gems/redcarpet-2.2.2/lib
+  5. /var/lib/gems/1.9.1/gems/tilt-1.3.3/lib
+  6. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib
+  7. /usr/local/lib/site_ruby/1.9.1
+  8. /usr/local/lib/site_ruby/1.9.1/i686-linux
+  9. /usr/local/lib/site_ruby
+  10. /usr/lib/ruby/vendor_ruby/1.9.1
+  11. /usr/lib/ruby/vendor_ruby/1.9.1/i686-linux
+  12. /usr/lib/ruby/vendor_ruby
+  13. /usr/lib/ruby/1.9.1
+  14. /usr/lib/ruby/1.9.1/i686-linux

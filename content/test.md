@@ -1,6 +1,8 @@
 ---
 title: test
 extensuin: md
+kind: article
+created_at: 2013/03/07 15:22
 ---
 
 # haml
