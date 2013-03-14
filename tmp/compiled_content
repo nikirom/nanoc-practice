@@ -1,106 +1,647 @@
-{:	data{"/stylesheet/{:default{:	lastI"* {
-  margin: 0;
-  padding: 0;
+{:	data{"/stylesheet/{:default{:	lastI"�html {
+  height: 100%; }
 
-  font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
 body {
-  background: #fff;
-}
+  font: normal 0.8em "trebuchet ms", arial, sans-serif;
+  background: #f7f7f7 url(pattern.png) fixed;
+  color: #555555; }
+
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.5em;
+  font-size: 107%; }
+
+img {
+  border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font: normal 250% "Yanone Kaffeesatz", arial, sans-serif;
+  color: #444444;
+  margin: 0 0 15px 0;
+  padding: 5px 0 5px 0; }
+
+h2 {
+  font: normal 170% "Yanone Kaffeesatz", arial, sans-serif;
+  color: #f14e23;
+  margin: 0;
+  padding: 0 0 8px 0; }
+
+h3 {
+  font-size: 200%;
+  margin: 0 0 9px 0;
+  color: #444444; }
+
+h4, h5, h6 {
+  margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 100% arial, sans-serif;
+  color: #f14e23;
+  line-height: 1em; }
+
+h5 {
+  font: italic 95% arial, sans-serif;
+  color: #888888;
+  padding-bottom: 15px; }
+
+h6 {
+  font: italic 95% arial, sans-serif;
+  color: #888888;
+  padding-bottom: 15px;
+  color: #362c20; }
 
 a {
+  outline: none;
   text-decoration: none;
-}
+  color: #35bdf5; }
+  a:hover {
+    outline: none;
+    text-decoration: none;
+    color: #35bdf5;
+    text-decoration: underline; }
 
-a:link,
-a:visited {
-  color: #f30;
-}
+.left {
+  float: left;
+  width: auto;
+  margin-right: 10px; }
 
-a:hover {
-  color: #f90;
-}
+.right {
+  float: right;
+  width: auto;
+  margin-left: 10px; }
+
+.center {
+  display: block;
+  text-align: center;
+  margin: 20px auto; }
+
+ul {
+  margin: 2px 0 22px 17px; }
+  ul li {
+    list-style-type: circle;
+    margin: 0 0 0 0;
+    padding: 0 0 4px 5px; }
+
+ol {
+  margin: 8px 0 22px 20px; }
+  ol li {
+    margin: 0 0 11px 0; }
+
+#main, #header, #logo, #menubar, #site_content, #footer {
+  margin-left: auto;
+  margin-right: auto; }
 
 #main {
-  position: absolute;
+  width: 950px;
+  margin: 20px auto; }
 
-  top: 40px;
-  left: 280px;
+#header {
+  width: 952px;
+  height: 145px; }
 
-  width: 500px;
-}
+#logo {
+  width: 950px;
+  float: left;
+  height: 100px;
+  background: transparent;
+  padding: 0 0 0px 10px; }
+  #logo h1 {
+    font: normal 350% "Yanone Kaffeesatz", arial, sans-serif;
+    padding: 5px 0 0 17px;
+    color: #555555;
+    float: left; }
+    #logo h1 a {
+      color: #35bdf5;
+      text-decoration: none; }
+      #logo h1 a:hover {
+        color: #555555;
+        text-decoration: none; }
 
-#main h1 {
-  font-size: 40px;
-  font-weight: normal;
-
-  line-height: 40px;
-
-  letter-spacing: -1px;
-}
-
-#main p {
-  margin: 20px 0;
-
-  font-size: 15px;
-
-  line-height: 20px;
-}
-
-#main ul, #main ol {
-  margin: 20px;
-}
-
-#main li {
-  font-size: 15px;
-
-  line-height: 20px;
-}
-
-#main ul li {
-  list-style-type: square;
-}
-
-#sidebar {
-  position: absolute;
-
-  top: 40px;
-  left: 20px;
-  width: 200px;
-
-  padding: 20px 20px 0 0;
-
-  border-right: 1px solid #ccc;
-
+.slogan {
+  float: right;
+  padding-right: 25px;
   text-align: right;
-}
+  font: 500% "tangerine", arial;
+  color: #111111; }
 
-#sidebar h2 {
-  text-transform: uppercase;
+#menubar {
+  height: 46px;
+  width: 700px;
+  margin: 0px auto -1px auto;
+  float: right;
+  padding: 0px 0 0 0; }
 
-  font-size: 13px;
+ul#menu {
+  float: right; }
+  ul#menu li {
+    float: left;
+    padding: 0 0 0px 0px;
+    list-style: none;
+    margin: 2px 0 0 0;
+    background: transparent; }
+    ul#menu li a {
+      font: normal 170% "Yanone Kaffeesatz", sans-serif;
+      text-decoration: none;
+      color: #444444;
+      display: block;
+      float: left;
+      height: 20px;
+      padding: 7px 23px 15px 23px;
+      text-align: center; }
+    ul#menu li.current a {
+      height: 20px;
+      padding: 6px 22px 15px 22px;
+      background: white;
+      border: 1px solid #dddddd;
+      border-bottom: 0;
+      color: #f14e23; }
+    ul#menu li a:hover {
+      color: #f14e23; }
 
-  color: #333;
+#site_content {
+  width: 950px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background: white;
+  border: 1px solid #e7e7e7; }
 
-  letter-spacing: 1px;
+#sidebar_container {
+  float: right;
+  width: 250px;
+  margin: 25px 0; }
 
-  line-height: 20px;
-}
+.sidebar {
+  float: right;
+  width: 200px;
+  margin: 0 24px 27px 0;
+  background: #fbfbfb;
+  border: 1px solid #eeeeee;
+  padding: 0 15px 15px 15px; }
+  .sidebar h3 {
+    padding: 10px 15px;
+    margin: 0 1px; }
 
-#sidebar ul {
-  list-style-type: none;
+.content h1 {
+  padding: 10px 15px;
+  margin: 0 1px; }
 
-  margin: 20px 0;
-}
+.sidebar h1 {
+  padding: 5px 0 0 0; }
 
-#sidebar li {
-  font-size: 14px;
+.paperclip {
+  float: left;
+  position: relative;
+  z-index: 0;
+  vertical-align: middle;
+  margin: -27px 0 -60px -30px; }
 
-  line-height: 20px;
-}
-:ET:raw@
-:pre@
+#content {
+  text-align: left;
+  width: 630px;
+  padding: 25px 0 5px 25px;
+  margin: 0; }
+  #content ul {
+    margin: 2px 0 22px 0px; }
+    #content ul li {
+      list-style-type: none;
+      background: url(bullet.png) no-repeat;
+      margin: 0 0 6px 0;
+      padding: 0 0 4px 25px;
+      line-height: 1.5em; }
+
+#footer {
+  clear: both;
+  width: 100%;
+  font: normal 150% "yanone kaffeesatz", arial, sans-serif;
+  height: 85px;
+  padding: 20px 0 5px 0;
+  text-align: center;
+  color: #555555;
+  background: transparent;
+  margin-bottom: 20px; }
+  #footer p {
+    padding: 0 0 10px 0; }
+  #footer a {
+    color: #555555;
+    text-decoration: none; }
+    #footer a:hover {
+      color: #555555;
+      text-decoration: none;
+      color: #35bdf5;
+      text-decoration: none; }
+
+.gallery img {
+  position: absolute; }
+
+.form_settings {
+  margin: 5px 0 0 0; }
+  .form_settings p {
+    padding: 0 0 10px 0; }
+  .form_settings span {
+    padding: 5px 0;
+    float: left;
+    width: 170px;
+    text-align: left; }
+  .form_settings input, .form_settings textarea {
+    width: 252px;
+    font: 100% "trebuchet ms", arial;
+    border: 0;
+    border: 1px solid #eeeeee;
+    padding: 5px 10px;
+    background: white;
+    color: white; }
+  .form_settings .submit {
+    border: 0;
+    width: auto;
+    margin: 0 0 0 200px;
+    cursor: pointer;
+    color: #35bdf5;
+    border: 1px solid #dddddd;
+    padding: 5px 15px;
+    background: white;
+    font: normal 140% "Yanone Kaffeesatz", sans-serif; }
+  .form_settings textarea {
+    font: 100% "trebuchet ms", arial;
+    border: 1px solid #eeeeee;
+    padding: 5px 10px;
+    background: white;
+    width: 252px;
+    overflow: auto; }
+  .form_settings select {
+    font: 100% "trebuchet ms", arial;
+    border: 1px solid #eeeeee;
+    padding: 5px 10px;
+    background: white;
+    width: 252px;
+    overflow: auto;
+    width: 274px; }
+  .form_settings .checkbox {
+    margin: 4px 0;
+    padding: 0;
+    width: 14px;
+    border: 0;
+    background: none; }
+
+.search {
+  color: #666666;
+  border: 1px solid #eeeeee;
+  margin: 0;
+  padding: 10px 5px;
+  width: 189px;
+  color: #f14e23; }
+
+.subscribe {
+  color: #35bdf5;
+  border: 1px solid #dddddd;
+  padding: 5px 10px;
+  background: white;
+  float: right;
+  cursor: pointer;
+  margin: 0;
+  font: normal 140% "Yanone Kaffeesatz", sans-serif; }
+
+table {
+  margin: 10px 0 30px 0; }
+  table tr th {
+    background: whitesmoke;
+    color: #111111;
+    padding: 7px 4px;
+    text-align: left; }
+  table tr td {
+    background: whitesmoke;
+    color: #111111;
+    padding: 7px 4px;
+    text-align: left;
+    background: #fbfbfb;
+    color: #111111;
+    border-top: 1px solid white; }
+:ET:rawI"�html
+  height: 100%
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font: normal .80em 'trebuchet ms', arial, sans-serif
+  background: #f7f7f7 url(pattern.png) fixed
+  color: #555
+
+p
+  padding: 0 0 20px 0
+  line-height: 1.5em
+  font-size: 107%
+
+img
+  border: 0
+
+h1, h2, h3, h4, h5, h6
+  font: normal 250% 'Yanone Kaffeesatz', arial, sans-serif
+  color: #444
+  margin: 0 0 15px 0
+  padding: 5px 0 5px 0
+
+h2
+  font: normal 170% 'Yanone Kaffeesatz', arial, sans-serif
+  color: #F14E23
+  margin: 0
+  padding: 0 0 8px 0
+
+h3
+  font-size: 200%
+  margin: 0 0 9px 0
+  color: #444
+
+h4, h5, h6
+  margin: 0
+  padding: 0 0 5px 0
+  font: normal 100% arial, sans-serif
+  color: #F14E23
+  line-height: 1em
+
+h5
+  font: italic 95% arial, sans-serif
+  color: #888
+  padding-bottom: 15px
+
+h6
+  font: italic 95% arial, sans-serif
+  color: #888
+  padding-bottom: 15px
+  color: #362C20
+
+a
+  outline: none
+  text-decoration: none
+  color: #35BDF5
+  &:hover
+    outline: none
+    text-decoration: none
+    color: #35BDF5
+    text-decoration: underline
+
+.left
+  float: left
+  width: auto
+  margin-right: 10px
+
+.right
+  float: right
+  width: auto
+  margin-left: 10px
+
+.center
+  display: block
+  text-align: center
+  margin: 20px auto
+
+ul
+  margin: 2px 0 22px 17px
+  li
+    list-style-type: circle
+    margin: 0 0 0 0
+    padding: 0 0 4px 5px
+
+ol
+  margin: 8px 0 22px 20px
+  li
+    margin: 0 0 11px 0
+
+#main, #header, #logo, #menubar, #site_content, #footer
+  margin-left: auto
+  margin-right: auto
+
+#main
+  width: 950px
+  margin: 20px auto
+
+#header
+  width: 952px
+  height: 145px
+
+#logo
+  width: 950px
+  float: left
+  height: 100px
+  background: transparent
+  padding: 0 0 0px 10px
+  h1
+    font: normal 350% 'Yanone Kaffeesatz', arial, sans-serif
+    padding: 5px 0 0 17px
+    color: #555
+    float: left
+    a
+      color: #35BDF5
+      text-decoration: none
+      &:hover
+        color: #555
+        text-decoration: none
+
+.slogan
+  float: right
+  padding-right: 25px
+  text-align: right
+  font: 500% 'tangerine', arial
+  color: #111
+
+#menubar
+  height: 46px
+  width: 700px
+  margin: 0px auto -1px auto
+  float: right
+  padding: 0px 0 0 0
+
+ul#menu
+  float: right
+  li
+    float: left
+    padding: 0 0 0px 0px
+    list-style: none
+    margin: 2px 0 0 0
+    background: transparent
+    a
+      font: normal 170% 'Yanone Kaffeesatz', sans-serif
+      text-decoration: none
+      color: #444
+      display: block
+      float: left
+      height: 20px
+      padding: 7px 23px 15px 23px
+      text-align: center
+    &.current a
+      height: 20px
+      padding: 6px 22px 15px 22px
+      background: #fff
+      border: 1px solid #ddd
+      border-bottom: 0
+      color: #F14E23
+    a:hover
+      color: #F14E23
+
+#site_content
+  width: 950px
+  overflow: hidden
+  margin: 0 auto 0 auto
+  padding: 0
+  background: #fff
+  border: 1px solid #E7E7E7
+
+#sidebar_container
+  float: right
+  width: 250px
+  margin: 25px 0
+
+.sidebar
+  float: right
+  width: 200px
+  margin: 0 24px 27px 0
+  background: #FBFBFB
+  border: 1px solid #eee
+  padding: 0 15px 15px 15px
+  h3
+    padding: 10px 15px
+    margin: 0 1px
+
+.content h1
+  padding: 10px 15px
+  margin: 0 1px
+
+.sidebar h1
+  padding: 5px 0 0 0
+
+.paperclip
+  float: left
+  position: relative
+  z-index: 0
+  vertical-align: middle
+  margin: -27px 0 -60px -30px
+
+#content
+  text-align: left
+  width: 630px
+  padding: 25px 0 5px 25px
+  margin: 0
+  ul
+    margin: 2px 0 22px 0px
+    li
+      list-style-type: none
+      background: url(bullet.png) no-repeat
+      margin: 0 0 6px 0
+      padding: 0 0 4px 25px
+      line-height: 1.5em
+
+#footer
+  clear: both
+  width: 100%
+  font: normal 150% 'yanone kaffeesatz',  arial, sans-serif
+  height: 85px
+  padding: 20px 0 5px 0
+  text-align: center
+  color: #555
+  background: transparent
+  margin-bottom: 20px
+  p
+    padding: 0 0 10px 0
+  a
+    color: #555
+    text-decoration: none
+    &:hover
+      color: #555
+      text-decoration: none
+      color: #35BDF5
+      text-decoration: none
+
+.gallery img
+  position: absolute
+
+.form_settings
+  margin: 5px 0 0 0
+  p
+    padding: 0 0 10px 0
+  span
+    padding: 5px 0
+    float: left
+    width: 170px
+    text-align: left
+  input, textarea
+    width: 252px
+    font: 100% 'trebuchet ms', arial
+    border: 0
+    border: 1px solid #eee
+    padding: 5px 10px
+    background: #fff
+    color: #FFF
+  .submit
+    border: 0
+    width: auto
+    margin: 0 0 0 200px
+    cursor: pointer
+    color: #35BDF5
+    border: 1px solid #ddd
+    padding: 5px 15px
+    background: #fff
+    font: normal 140% 'Yanone Kaffeesatz', sans-serif
+  textarea
+    font: 100% 'trebuchet ms', arial
+    border: 1px solid #eee
+    padding: 5px 10px
+    background: #fff
+    width: 252px
+    overflow: auto
+  select
+    font: 100% 'trebuchet ms', arial
+    border: 1px solid #eee
+    padding: 5px 10px
+    background: #fff
+    width: 252px
+    overflow: auto
+    width: 274px
+  .checkbox
+    margin: 4px 0
+    padding: 0
+    width: 14px
+    border: 0
+    background: none
+
+.search
+  color: #666
+  border: 1px solid #eee
+  margin: 0
+  padding: 10px 5px
+  width: 189px
+  color: #F14E23
+
+.subscribe
+  color: #35BDF5
+  border: 1px solid #ddd
+  padding: 5px 10px
+  background: #fff
+  float: right
+  cursor: pointer
+  margin: 0
+  font: normal 140% 'Yanone Kaffeesatz', sans-serif
+
+table
+  margin: 10px 0 30px 0
+  tr
+    th
+      background: #F5F5F5
+      color: #111
+      padding: 7px 4px
+      text-align: left
+    td
+      background: #F5F5F5
+      color: #111
+      padding: 7px 4px
+      text-align: left
+      background: #FBFBFB
+      color: #111
+      border-top: 1px solid #FFF
+;T:pre@
 "/{;{;I"�<h1>A Brand New nanoc Site</h1>
 
 <p>You’ve just created a new nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:</p>
@@ -110,41 +651,136 @@ a:hover {
   <li><p><strong>Change the layout</strong>, which is the “default.html” file in the “layouts” directory, and create something unique (and hopefully less bland).</p></li>
 </ul>
 
-<p>If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>;T;	@;
-@"/test/{;{	;I"/<!DOCTYPE html>
-<head>
-  <meta charset='utf-8'>
-  <meta content='nanoc 3.1.6' name='generator'>
-  <title>
-    A Brand New nanoc Site -
-    test
-  </title>
+<p>If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>;T;	@;
+@"/test/{;{	;I"2<!DOCTYPE html>
+<html>
+  <head>
+    <title>simplestyle_7</title>
+    <meta content='website description' name='description'>
+    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='text/html; charset=windows-1252' http-equiv='content-type'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
+  </head>
   <body>
     <div id='main'>
-      <h1>haml</h1>
-      
-      <p>テスト</p>
-      
-      <hr>
-      
-      <ul>
-      <li>test
-      
-      <ul>
-      <li>test</li>
-      <li>test</li>
-      </ul></li>
-      <li>test</li>
-      </ul>
-    </div>
-    <div id='sidebar'>
-      <ul>
-        <li><a href="/test/">test</a></li>
-        <span>2013/03/07 15:22</span>
-      </ul>
+      <div id='header'>
+        <div id='logo'>
+          <h1>
+            simplestyle
+            <a href='#'>_7</a>
+          </h1>
+          <div class='slogan'>Cool slogan goes here!</div>
+        </div>
+        <div id='menubar'>
+          <ul id='menu'>
+            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+            <li class='current'>
+              <a href='index.html'>Home</a>
+            </li>
+            <li>
+              <a href='examples.html'>Examples</a>
+            </li>
+            <li>
+              <a href='page.html'>A Page</a>
+            </li>
+            <li>
+              <a href='another_page.html'>Another Page</a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='site_content'>
+        <div id='sidebar_container'>
+          <img alt='paperclip' class='paperclip' src='style/paperclip.png'>
+          <div class='sidebar'>
+            <!-- insert your sidebar items here -->
+            <h3>Latest News</h3>
+            <h4>What's the News?</h4>
+            <h5>1st July 2011</h5>
+            <p>
+              Put your latest news item here, or anything else you would like in the sidebar!
+              <br>
+              <a href='#'>Read more</a>
+            </p>
+          </div>
+          <img alt='paperclip' class='paperclip' src='style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Newsletter</h3>
+            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
+            <form action='#' id='subscribe' method='post'>
+              <p style='padding: 0 0 9px 0;'>
+                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
+              </p>
+              <p>
+                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
+              </p>
+            </form>
+          </div>
+          <img alt='paperclip' class='paperclip' src='style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Latest Blog</h3>
+            <h4>Website Goes Live</h4>
+            <h5>1st July 2011</h5>
+            <p>
+              We have just launched our new website. Take a look around, we'd love to know what you think.....
+              <br>
+              <a href='#'>read more</a>
+            </p>
+          </div>
+        </div>
+        <div id='content'>
+          <!-- insert the page content here -->
+          <h1>Welcome to the simplestyle_7 template</h1>
+          <p>
+            This standards compliant, simple, fixed width website template is released as an 'open source' design (under a
+            <a href='http://creativecommons.org/licenses/by/3.0'>Creative Commons Attribution 3.0 Licence</a>),
+            which means that you are free to download and use it for anything you want (including modifying and amending it). All I ask is that you leave the 'design from HTML5webtemplates.co.uk' link in the footer of the template, but other than that...
+          </p>
+          <p>
+            This template is written entirely in
+            <strong>HTML5</strong>
+            and
+            <strong>CSS</strong>,
+            and can be validated using the links in the footer.
+          </p>
+          <p>
+            You can view more free HTML5 web templates
+            <a href='http://www.html5webtemplates.co.uk'>here</a>.
+          </p>
+          <p>
+            This template is a fully functional 5 page website, with an
+            <a href='examples.html'>examples</a>
+            page that gives examples of all the styles available with this design.
+          </p>
+          <h2>Browser Compatibility</h2>
+          <p>This template has been tested in the following browsers:</p>
+          <ul>
+            <li>Internet Explorer 8</li>
+            <li>Internet Explorer 7</li>
+            <li>FireFox 3.5</li>
+            <li>Google Chrome 6</li>
+            <li>Safari 4</li>
+          </ul>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          Copyright c simplestyle_7 
+          <a href='http://validator.w3.org/check?uri=referer'>HTML5</a>
+          |
+          <a href='http://jigsaw.w3.org/css-validator/check/referer'>CSS</a>
+          |
+          <a href='http://www.html5webtemplates.co.uk'>design from HTML5webtemplates.co.uk</a>
+        </p>
+      </div>
     </div>
   </body>
-</head>
+</html>
 ;T;	I";# haml
 
 テスト
@@ -170,4 +806,4 @@ I"{<h1>haml</h1>
 </ul></li>
 <li>test</li>
 </ul>
-;T:	post@:versioni
+;T:	post@:versioni
