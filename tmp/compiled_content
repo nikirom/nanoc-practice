@@ -1,4 +1,4 @@
-{:	data{"/stylesheet/{:default{:	lastI"�html {
+{:	data{"/stylesheet/{:default{:	lastI"$html {
   height: 100%; }
 
 * {
@@ -89,6 +89,13 @@ ol {
   margin: 8px 0 22px 20px; }
   ol li {
     margin: 0 0 11px 0; }
+
+pre {
+  word-wrap: break-word;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: #efefef; }
 
 #main, #header, #logo, #menubar, #site_content, #footer {
   margin-left: auto;
@@ -210,7 +217,7 @@ ul#menu {
       list-style-type: none;
       background: url(bullet.png) no-repeat;
       margin: 0 0 6px 0;
-      padding: 0 0 4px 25px;
+      padding: 0 0 0px 25px;
       line-height: 1.5em; }
 
 #footer {
@@ -319,7 +326,7 @@ table {
     background: #fbfbfb;
     color: #111111;
     border-top: 1px solid white; }
-:ET:rawI"�html
+:ET:rawI"html
   height: 100%
 
 *
@@ -410,6 +417,13 @@ ol
   margin: 8px 0 22px 20px
   li
     margin: 0 0 11px 0
+
+pre
+  word-wrap: break-word
+  margin: 10px
+  padding: 5px
+  border: 1px solid gray
+  background-color: #efefef
 
 #main, #header, #logo, #menubar, #site_content, #footer
   margin-left: auto
@@ -531,7 +545,7 @@ ul#menu
       list-style-type: none
       background: url(bullet.png) no-repeat
       margin: 0 0 6px 0
-      padding: 0 0 4px 25px
+      padding: 0 0 0px 25px
       line-height: 1.5em
 
 #footer
@@ -642,26 +656,149 @@ table
       color: #111
       border-top: 1px solid #FFF
 ;T:pre@
-"/{;{;I"�<h1>A Brand New nanoc Site</h1>
-
-<p>You’ve just created a new nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:</p>
-
-<ul>
-  <li><p><strong>Change this page’s content</strong> by editing the “index.html” file in the “content” directory. This is the actual page content, and therefore doesn’t include the header, sidebar or style information (those are part of the layout).</p></li>
-  <li><p><strong>Change the layout</strong>, which is the “default.html” file in the “layouts” directory, and create something unique (and hopefully less bland).</p></li>
-</ul>
-
-<p>If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>;T;	@;
-@"/test/{;{	;I"2<!DOCTYPE html>
+"/{;{	;I"&<!DOCTYPE html>
 <html>
   <head>
     <title>simplestyle_7</title>
     <meta content='website description' name='description'>
+    <meta content='nanoc 3.1.6' name='generator'>
     <meta content='website keywords, website keywords' name='keywords'>
-    <meta content='text/html; charset=windows-1252' http-equiv='content-type'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'>
     <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-    <link href='/style.css' rel='stylesheet' type='text/css'>
+    <link href='/style/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div id='logo'>
+          <h1>
+            simplestyle
+            <a href='#'>_7</a>
+          </h1>
+          <div class='slogan'>Cool slogan goes here!</div>
+        </div>
+        <div id='menubar'>
+          <ul id='menu'>
+            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+            <li class='current'>
+              <a href='/index.html'>Home</a>
+            </li>
+            <li>
+              <a href='examples.html'>Examples</a>
+            </li>
+            <li>
+              <a href='page.html'>A Page</a>
+            </li>
+            <li>
+              <a href='another_page.html'>Another Page</a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='site_content'>
+        <div id='sidebar_container'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <ul>
+              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+              <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
+              <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+            </ul>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Newsletter</h3>
+            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
+            <form action='#' id='subscribe' method='post'>
+              <p style='padding: 0 0 9px 0;'>
+                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
+              </p>
+              <p>
+                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
+              </p>
+            </form>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Latest Blog</h3>
+            <h4>Website Goes Live</h4>
+            <h5>1st July 2011</h5>
+            <p>
+              We have just launched our new website. Take a look around, we'd love to know what you think.....
+              <br>
+              <a href='#'>read more</a>
+            </p>
+          </div>
+        </div>
+        <div id='content'>
+          <!-- insert the page content here -->
+          <h2><a href="/articles/2013-03-17/">メモ</a></h2>
+          <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
+          
+          <p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
+          <p class='readmore'>
+            <a href="/articles/2013-03-17/">記事の続きを読む &raquo;</a>
+          </p>
+          <h2><a href="/articles/test2/">A New Item</a></h2>
+          <p>Hi, I&#39;m a new item!</p>
+          <h2><a href="/articles/test/">test</a></h2>
+          <h1>haml</h1>
+          <p class='readmore'>
+            <a href="/articles/test/">記事の続きを読む &raquo;</a>
+          </p>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          Copyright c simplestyle_7 
+          <a href='http://validator.w3.org/check?uri=referer'>HTML5</a>
+          |
+          <a href='http://jigsaw.w3.org/css-validator/check/referer'>CSS</a>
+          |
+          <a href='http://www.html5webtemplates.co.uk'>design from HTML5webtemplates.co.uk</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+;T;	I"H- sorted_articles[0, 6].each do |article|
+  %h2 #{link_to(article[:title], article.path)}
+  - if article_desc_match_data = article.compiled_content.match(/^.*?(?=<h2>)/m)
+    = article_desc_match_data.to_s
+    %p.readmore
+      = link_to("記事の続きを読む &raquo;", article.path)
+  - else
+    = article.compiled_content
+;T;
+I"W<h2><a href="/articles/2013-03-17/">メモ</a></h2>
+<p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
+
+<p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
+<p class='readmore'>
+  <a href="/articles/2013-03-17/">記事の続きを読む &raquo;</a>
+</p>
+<h2><a href="/articles/test2/">A New Item</a></h2>
+<p>Hi, I&#39;m a new item!</p>
+<h2><a href="/articles/test/">test</a></h2>
+<h1>haml</h1>
+<p class='readmore'>
+  <a href="/articles/test/">記事の続きを読む &raquo;</a>
+</p>
+;T:	post@"/test/{;{	;I"�<!DOCTYPE html>
+<html>
+  <head>
+    <title>simplestyle_7</title>
+    <meta content='website description' name='description'>
+    <meta content='nanoc 3.1.6' name='generator'>
+    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='/style/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id='main'>
@@ -696,19 +833,13 @@ table
       </div>
       <div id='site_content'>
         <div id='sidebar_container'>
-          <img alt='paperclip' class='paperclip' src='style/paperclip.png'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
-            <!-- insert your sidebar items here -->
-            <h3>Latest News</h3>
-            <h4>What's the News?</h4>
-            <h5>1st July 2011</h5>
-            <p>
-              Put your latest news item here, or anything else you would like in the sidebar!
-              <br>
-              <a href='#'>Read more</a>
-            </p>
+            <ul>
+              <li><a href="/test/">test</a> 2013/03/07 15:22</li>
+            </ul>
           </div>
-          <img alt='paperclip' class='paperclip' src='style/paperclip.png'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
             <h3>Newsletter</h3>
             <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
@@ -721,7 +852,7 @@ table
               </p>
             </form>
           </div>
-          <img alt='paperclip' class='paperclip' src='style/paperclip.png'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
             <h3>Latest Blog</h3>
             <h4>Website Goes Live</h4>
@@ -735,36 +866,20 @@ table
         </div>
         <div id='content'>
           <!-- insert the page content here -->
-          <h1>Welcome to the simplestyle_7 template</h1>
-          <p>
-            This standards compliant, simple, fixed width website template is released as an 'open source' design (under a
-            <a href='http://creativecommons.org/licenses/by/3.0'>Creative Commons Attribution 3.0 Licence</a>),
-            which means that you are free to download and use it for anything you want (including modifying and amending it). All I ask is that you leave the 'design from HTML5webtemplates.co.uk' link in the footer of the template, but other than that...
-          </p>
-          <p>
-            This template is written entirely in
-            <strong>HTML5</strong>
-            and
-            <strong>CSS</strong>,
-            and can be validated using the links in the footer.
-          </p>
-          <p>
-            You can view more free HTML5 web templates
-            <a href='http://www.html5webtemplates.co.uk'>here</a>.
-          </p>
-          <p>
-            This template is a fully functional 5 page website, with an
-            <a href='examples.html'>examples</a>
-            page that gives examples of all the styles available with this design.
-          </p>
-          <h2>Browser Compatibility</h2>
-          <p>This template has been tested in the following browsers:</p>
+          <h1>haml</h1>
+          
+          <h2>テスト</h2>
+          
+          <hr>
+          
           <ul>
-            <li>Internet Explorer 8</li>
-            <li>Internet Explorer 7</li>
-            <li>FireFox 3.5</li>
-            <li>Google Chrome 6</li>
-            <li>Safari 4</li>
+          <li>test
+          
+          <ul>
+          <li>test</li>
+          <li>test</li>
+          </ul></li>
+          <li>test</li>
           </ul>
         </div>
       </div>
@@ -781,9 +896,9 @@ table
     </div>
   </body>
 </html>
-;T;	I";# haml
+;T;	I"># haml
 
-テスト
+## テスト
 
 ***
 
@@ -791,9 +906,9 @@ table
  - test
   + test
 * test;T;
-I"{<h1>haml</h1>
+I"}<h1>haml</h1>
 
-<p>テスト</p>
+<h2>テスト</h2>
 
 <hr>
 
@@ -806,4 +921,379 @@ I"{<h1>haml</h1>
 </ul></li>
 <li>test</li>
 </ul>
-;T:	post@:versioni
+;T;@"/articles/test/{;{	;I"R<!DOCTYPE html>
+<html>
+  <head>
+    <title>simplestyle_7</title>
+    <meta content='website description' name='description'>
+    <meta content='nanoc 3.1.6' name='generator'>
+    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='/style/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div id='logo'>
+          <h1>
+            simplestyle
+            <a href='#'>_7</a>
+          </h1>
+          <div class='slogan'>Cool slogan goes here!</div>
+        </div>
+        <div id='menubar'>
+          <ul id='menu'>
+            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+            <li class='current'>
+              <a href='/index.html'>Home</a>
+            </li>
+            <li>
+              <a href='examples.html'>Examples</a>
+            </li>
+            <li>
+              <a href='page.html'>A Page</a>
+            </li>
+            <li>
+              <a href='another_page.html'>Another Page</a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='site_content'>
+        <div id='sidebar_container'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <ul>
+              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+              <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
+              <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+            </ul>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Newsletter</h3>
+            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
+            <form action='#' id='subscribe' method='post'>
+              <p style='padding: 0 0 9px 0;'>
+                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
+              </p>
+              <p>
+                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
+              </p>
+            </form>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Latest Blog</h3>
+            <h4>Website Goes Live</h4>
+            <h5>1st July 2011</h5>
+            <p>
+              We have just launched our new website. Take a look around, we'd love to know what you think.....
+              <br>
+              <a href='#'>read more</a>
+            </p>
+          </div>
+        </div>
+        <div id='content'>
+          <!-- insert the page content here -->
+          <h1>haml</h1>
+          
+          <h2>テスト</h2>
+          
+          <hr/>
+          
+          <ul>
+          <li>test
+          
+          <ul>
+          <li>test</li>
+          <li>test</li>
+          </ul></li>
+          <li>test</li>
+          </ul>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          Copyright c simplestyle_7 
+          <a href='http://validator.w3.org/check?uri=referer'>HTML5</a>
+          |
+          <a href='http://jigsaw.w3.org/css-validator/check/referer'>CSS</a>
+          |
+          <a href='http://www.html5webtemplates.co.uk'>design from HTML5webtemplates.co.uk</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+;T;	I"># haml
+
+## テスト
+
+***
+
+* test
+ - test
+  + test
+* test;T;
+I"~<h1>haml</h1>
+
+<h2>テスト</h2>
+
+<hr/>
+
+<ul>
+<li>test
+
+<ul>
+<li>test</li>
+<li>test</li>
+</ul></li>
+<li>test</li>
+</ul>
+;T;@"/articles/test2/{;{	;I"l<!DOCTYPE html>
+<html>
+  <head>
+    <title>simplestyle_7</title>
+    <meta content='website description' name='description'>
+    <meta content='nanoc 3.1.6' name='generator'>
+    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='/style/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div id='logo'>
+          <h1>
+            simplestyle
+            <a href='#'>_7</a>
+          </h1>
+          <div class='slogan'>Cool slogan goes here!</div>
+        </div>
+        <div id='menubar'>
+          <ul id='menu'>
+            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+            <li class='current'>
+              <a href='/index.html'>Home</a>
+            </li>
+            <li>
+              <a href='examples.html'>Examples</a>
+            </li>
+            <li>
+              <a href='page.html'>A Page</a>
+            </li>
+            <li>
+              <a href='another_page.html'>Another Page</a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='site_content'>
+        <div id='sidebar_container'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <ul>
+              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+              <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
+              <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+            </ul>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Newsletter</h3>
+            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
+            <form action='#' id='subscribe' method='post'>
+              <p style='padding: 0 0 9px 0;'>
+                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
+              </p>
+              <p>
+                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
+              </p>
+            </form>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Latest Blog</h3>
+            <h4>Website Goes Live</h4>
+            <h5>1st July 2011</h5>
+            <p>
+              We have just launched our new website. Take a look around, we'd love to know what you think.....
+              <br>
+              <a href='#'>read more</a>
+            </p>
+          </div>
+        </div>
+        <div id='content'>
+          <!-- insert the page content here -->
+          <p>Hi, I&#39;m a new item!</p>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          Copyright c simplestyle_7 
+          <a href='http://validator.w3.org/check?uri=referer'>HTML5</a>
+          |
+          <a href='http://jigsaw.w3.org/css-validator/check/referer'>CSS</a>
+          |
+          <a href='http://www.html5webtemplates.co.uk'>design from HTML5webtemplates.co.uk</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+;T;	I"Hi, I'm a new item!;T;
+I"$<p>Hi, I&#39;m a new item!</p>
+;T;@!"/articles/2013-03-17/{;{	;I"�<!DOCTYPE html>
+<html>
+  <head>
+    <title>simplestyle_7</title>
+    <meta content='website description' name='description'>
+    <meta content='nanoc 3.1.6' name='generator'>
+    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='/style/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div id='logo'>
+          <h1>
+            simplestyle
+            <a href='#'>_7</a>
+          </h1>
+          <div class='slogan'>Cool slogan goes here!</div>
+        </div>
+        <div id='menubar'>
+          <ul id='menu'>
+            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+            <li class='current'>
+              <a href='/index.html'>Home</a>
+            </li>
+            <li>
+              <a href='examples.html'>Examples</a>
+            </li>
+            <li>
+              <a href='page.html'>A Page</a>
+            </li>
+            <li>
+              <a href='another_page.html'>Another Page</a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='site_content'>
+        <div id='sidebar_container'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <ul>
+              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+              <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
+              <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+            </ul>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Newsletter</h3>
+            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
+            <form action='#' id='subscribe' method='post'>
+              <p style='padding: 0 0 9px 0;'>
+                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
+              </p>
+              <p>
+                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
+              </p>
+            </form>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Latest Blog</h3>
+            <h4>Website Goes Live</h4>
+            <h5>1st July 2011</h5>
+            <p>
+              We have just launched our new website. Take a look around, we'd love to know what you think.....
+              <br>
+              <a href='#'>read more</a>
+            </p>
+          </div>
+        </div>
+        <div id='content'>
+          <!-- insert the page content here -->
+          <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
+
+<p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
+
+<h2>nanoc</h2>
+
+<ul>
+<li>compileでファイル書き出し
+
+<ul>
+<li>基本的にフィルターに渡す</li>
+</ul></li>
+</ul>
+<div class="CodeRay">
+  <div class="code"><pre> filter <span style="color:#A60">:haml</span>
+ layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+</pre></div>
+</div>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          Copyright c simplestyle_7 
+          <a href='http://validator.w3.org/check?uri=referer'>HTML5</a>
+          |
+          <a href='http://jigsaw.w3.org/css-validator/check/referer'>CSS</a>
+          |
+          <a href='http://www.html5webtemplates.co.uk'>design from HTML5webtemplates.co.uk</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+;T;	I"O毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ
+
+ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます
+## nanoc
+- compileでファイル書き出し
+ - 基本的にフィルターに渡す
+
+```ruby
+ filter :haml
+ layout 'default'
+```;T;
+I"|<p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
+
+<p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
+
+<h2>nanoc</h2>
+
+<ul>
+<li>compileでファイル書き出し
+
+<ul>
+<li>基本的にフィルターに渡す</li>
+</ul></li>
+</ul>
+<div class="CodeRay">
+  <div class="code"><pre> filter <span style="color:#A60">:haml</span>
+ layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+</pre></div>
+</div>
+;T;@':versioni
