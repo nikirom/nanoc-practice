@@ -1,4 +1,4 @@
-{:	data{"/stylesheet/{:default{:	lastI"$html {
+{:	data{"/stylesheet/{:default{:	lastI"#html {
   height: 100%; }
 
 * {
@@ -11,7 +11,7 @@ body {
   color: #555555; }
 
 p {
-  padding: 0 0 20px 0;
+  padding: 0 0 5px 0;
   line-height: 1.5em;
   font-size: 107%; }
 
@@ -326,7 +326,7 @@ table {
     background: #fbfbfb;
     color: #111111;
     border-top: 1px solid white; }
-:ET:rawI"html
+:ET:rawI"html
   height: 100%
 
 *
@@ -339,7 +339,7 @@ body
   color: #555
 
 p
-  padding: 0 0 20px 0
+  padding: 0 0 5px 0
   line-height: 1.5em
   font-size: 107%
 
@@ -656,10 +656,10 @@ table
       color: #111
       border-top: 1px solid #FFF
 ;T:pre@
-"/{;{	;I"&<!DOCTYPE html>
+"/{;{	;I" <!DOCTYPE html>
 <html>
   <head>
-    <title>simplestyle_7</title>
+    <title>だん死はnikirom</title>
     <meta content='website description' name='description'>
     <meta content='nanoc 3.1.6' name='generator'>
     <meta content='website keywords, website keywords' name='keywords'>
@@ -673,8 +673,8 @@ table
       <div id='header'>
         <div id='logo'>
           <h1>
-            simplestyle
-            <a href='#'>_7</a>
+            だん死はnikirom
+            <!-- %a{:href => #{item[:title]}} -->
           </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
@@ -705,8 +705,7 @@ table
           <div class='sidebar'>
             <ul>
               <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
-              <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
-              <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
             </ul>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
@@ -743,13 +742,17 @@ table
           <p class='readmore'>
             <a href="/articles/2013-03-17/">記事の続きを読む &raquo;</a>
           </p>
-          <h2><a href="/articles/test2/">A New Item</a></h2>
-          <p>Hi, I&#39;m a new item!</p>
-          <h2><a href="/articles/test/">test</a></h2>
-          <h1>haml</h1>
-          <p class='readmore'>
-            <a href="/articles/test/">記事の続きを読む &raquo;</a>
-          </p>
+          <h2><a href="/articles/2012-04-28/">Home</a></h2>
+          <p>実家のPCサポートするためにさくらのVPS借りて、そこからリモートデスクトップしよう&gt;と思ってたんだけど実家のVistaにリモートデスクトップの環境がなくて断念した。後か&gt;ら考えたらVistaにフリーのvncサーバ入れればよかったんだけどまぁいっかってことでVPSが宙ぶらりんになったしせっかくだから作ってみた。 5/5まで2週間無料だしその日まで
+          の稼動かもしれないのつもりだったけどドメイン取ってしまった。</p>
+          
+          <ul>
+          <li>Ubuntu10.04 32bit</li>
+          <li>Nginx1.2</li>
+          <li>nanoc</li>
+          </ul>
+          
+          <p>力尽きた</p>
         </div>
       </div>
       <div id='footer'>
@@ -774,20 +777,24 @@ table
   - else
     = article.compiled_content
 ;T;
-I"W<h2><a href="/articles/2013-03-17/">メモ</a></h2>
+I":<h2><a href="/articles/2013-03-17/">メモ</a></h2>
 <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
 
 <p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
 <p class='readmore'>
   <a href="/articles/2013-03-17/">記事の続きを読む &raquo;</a>
 </p>
-<h2><a href="/articles/test2/">A New Item</a></h2>
-<p>Hi, I&#39;m a new item!</p>
-<h2><a href="/articles/test/">test</a></h2>
-<h1>haml</h1>
-<p class='readmore'>
-  <a href="/articles/test/">記事の続きを読む &raquo;</a>
-</p>
+<h2><a href="/articles/2012-04-28/">Home</a></h2>
+<p>実家のPCサポートするためにさくらのVPS借りて、そこからリモートデスクトップしよう&gt;と思ってたんだけど実家のVistaにリモートデスクトップの環境がなくて断念した。後か&gt;ら考えたらVistaにフリーのvncサーバ入れればよかったんだけどまぁいっかってことでVPSが宙ぶらりんになったしせっかくだから作ってみた。 5/5まで2週間無料だしその日まで
+の稼動かもしれないのつもりだったけどドメイン取ってしまった。</p>
+
+<ul>
+<li>Ubuntu10.04 32bit</li>
+<li>Nginx1.2</li>
+<li>nanoc</li>
+</ul>
+
+<p>力尽きた</p>
 ;T:	post@"/test/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
@@ -921,10 +928,10 @@ I"}<h1>haml</h1>
 </ul></li>
 <li>test</li>
 </ul>
-;T;@"/articles/test/{;{	;I"R<!DOCTYPE html>
+;T;@"/articles/test/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
-    <title>simplestyle_7</title>
+    <title>だん死はnikirom</title>
     <meta content='website description' name='description'>
     <meta content='nanoc 3.1.6' name='generator'>
     <meta content='website keywords, website keywords' name='keywords'>
@@ -938,8 +945,8 @@ I"}<h1>haml</h1>
       <div id='header'>
         <div id='logo'>
           <h1>
-            simplestyle
-            <a href='#'>_7</a>
+            だん死はnikirom
+            <!-- %a{:href => #{item[:title]}} -->
           </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
@@ -972,6 +979,7 @@ I"}<h1>haml</h1>
               <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
               <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
               <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
             </ul>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
@@ -1056,10 +1064,10 @@ I"~<h1>haml</h1>
 </ul></li>
 <li>test</li>
 </ul>
-;T;@"/articles/test2/{;{	;I"l<!DOCTYPE html>
+;T;@"/articles/test2/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
-    <title>simplestyle_7</title>
+    <title>だん死はnikirom</title>
     <meta content='website description' name='description'>
     <meta content='nanoc 3.1.6' name='generator'>
     <meta content='website keywords, website keywords' name='keywords'>
@@ -1073,8 +1081,8 @@ I"~<h1>haml</h1>
       <div id='header'>
         <div id='logo'>
           <h1>
-            simplestyle
-            <a href='#'>_7</a>
+            だん死はnikirom
+            <!-- %a{:href => #{item[:title]}} -->
           </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
@@ -1107,6 +1115,7 @@ I"~<h1>haml</h1>
               <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
               <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
               <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
             </ul>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
@@ -1154,10 +1163,10 @@ I"~<h1>haml</h1>
 </html>
 ;T;	I"Hi, I'm a new item!;T;
 I"$<p>Hi, I&#39;m a new item!</p>
-;T;@!"/articles/2013-03-17/{;{	;I"�<!DOCTYPE html>
+;T;@!"/articles/2013-03-17/{;{	;I"_!<!DOCTYPE html>
 <html>
   <head>
-    <title>simplestyle_7</title>
+    <title>だん死はnikirom</title>
     <meta content='website description' name='description'>
     <meta content='nanoc 3.1.6' name='generator'>
     <meta content='website keywords, website keywords' name='keywords'>
@@ -1171,8 +1180,8 @@ I"$<p>Hi, I&#39;m a new item!</p>
       <div id='header'>
         <div id='logo'>
           <h1>
-            simplestyle
-            <a href='#'>_7</a>
+            だん死はnikirom
+            <!-- %a{:href => #{item[:title]}} -->
           </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
@@ -1203,8 +1212,7 @@ I"$<p>Hi, I&#39;m a new item!</p>
           <div class='sidebar'>
             <ul>
               <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
-              <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
-              <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
             </ul>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
@@ -1245,13 +1253,54 @@ I"$<p>Hi, I&#39;m a new item!</p>
 
 <ul>
 <li>基本的にフィルターに渡す</li>
+<li>itemはnanocで用意されてる。コンパイル対象ファイルの情報を色々持ってる</li>
 </ul></li>
 </ul>
 <div class="CodeRay">
-  <div class="code"><pre> filter <span style="color:#A60">:haml</span>
- layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+  <div class="code"><pre>compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">*</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+  <span style="color:#080;font-weight:bold">if</span> item.binary?
+    <span style="color:#777"># don’t filter binary items</span>
+  <span style="color:#080;font-weight:bold">else</span>
+   <span style="color:#080;font-weight:bold">case</span> item[<span style="color:#A60">:extension</span>]
+    <span style="color:#080;font-weight:bold">when</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">md</span><span style="color:#710">'</span></span>
+     filter <span style="color:#A60">:redcarpet</span>, <span style="color:#A60">:options</span> =&gt; {<span style="color:#A60">:fenced_code_blocks</span> =&gt; <span style="color:#069">true</span>},<span style="color:#A60">:renderer</span> =&gt; <span style="color:#036;font-weight:bold">MyRedcarpetRenderer</span>
+     layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+    <span style="color:#080;font-weight:bold">when</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">haml</span><span style="color:#710">'</span></span>
+     filter <span style="color:#A60">:haml</span>
+     layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+   <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
 </pre></div>
 </div>
+
+<ul>
+<li>レイアウト用のフィルターにhaml、記事用のフィルターにredcarpetを使っている。</li>
+<li>MyRedcarpetRendererはコードのハイライト用にcoderay使うためのラッパーでlib/default.rbに書いた</li>
+</ul>
+<div class="CodeRay">
+  <div class="code"><pre>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">redcarpet</span><span style="color:#710">&quot;</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">coderay</span><span style="color:#710">&quot;</span></span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MyRedcarpetRenderer</span> &lt; <span style="color:#036;font-weight:bold">Redcarpet</span>::<span style="color:#036;font-weight:bold">Render</span>::<span style="color:#036;font-weight:bold">XHTML</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">block_code</span>(code, language)
+    <span style="color:#080;font-weight:bold">if</span> language <span style="color:#080;font-weight:bold">then</span>
+      <span style="color:#036;font-weight:bold">CodeRay</span>.scan(code, language).div
+    <span style="color:#080;font-weight:bold">else</span>
+      <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#b0b">\n</span><span style="color:#D20">&lt;pre&gt;&lt;code&gt;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>code<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">&lt;/code&gt;&lt;/pre&gt;</span><span style="color:#b0b">\n</span><span style="color:#710">&quot;</span></span>
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
+
+<p>以下の記事が大変参考になった</p>
+
+<ul>
+<li><a href="http://blog.designrecipe.jp/2010/07/19/nanoc-basic/">静的な Web サイト生成ツール Nanoc 基本編 - まずは試してみる</a></li>
+<li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
+<li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
+</ul>
         </div>
       </div>
       <div id='footer'>
@@ -1267,18 +1316,54 @@ I"$<p>Hi, I&#39;m a new item!</p>
     </div>
   </body>
 </html>
-;T;	I"O毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ
+;T;	I"u毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ
 
 ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます
 ## nanoc
 - compileでファイル書き出し
  - 基本的にフィルターに渡す
+ - itemはnanocで用意されてる。コンパイル対象ファイルの情報を色々持ってる
 
 ```ruby
- filter :haml
- layout 'default'
-```;T;
-I"|<p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+   case item[:extension]
+    when 'md'
+     filter :redcarpet, :options => {:fenced_code_blocks => true},:renderer => MyRedcarpetRenderer
+     layout 'default'
+    when 'haml'
+     filter :haml
+     layout 'default'
+   end
+  end
+end
+```
+
+ - レイアウト用のフィルターにhaml、記事用のフィルターにredcarpetを使っている。
+ - MyRedcarpetRendererはコードのハイライト用にcoderay使うためのラッパーでlib/default.rbに書いた
+
+```ruby
+require "redcarpet"
+require "coderay"
+
+class MyRedcarpetRenderer < Redcarpet::Render::XHTML
+  def block_code(code, language)
+    if language then
+      CodeRay.scan(code, language).div
+    else
+      "\n<pre><code>#{code}</code></pre>\n"
+    end
+  end
+end
+```
+以下の記事が大変参考になった
+
+- [静的な Web サイト生成ツール Nanoc 基本編 - まずは試してみる](http://blog.designrecipe.jp/2010/07/19/nanoc-basic/)
+- [nanoc導入メモ 1/5 「Getting Started」編](http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/)
+- [Nanoc - コンパイル時のルーティング設定！](http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/);T;
+I"C<p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
 
 <p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
 
@@ -1289,11 +1374,174 @@ I"|<p>毎回ググるのだるいし、一回覚えたのに時間経過とと
 
 <ul>
 <li>基本的にフィルターに渡す</li>
+<li>itemはnanocで用意されてる。コンパイル対象ファイルの情報を色々持ってる</li>
 </ul></li>
 </ul>
 <div class="CodeRay">
-  <div class="code"><pre> filter <span style="color:#A60">:haml</span>
- layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+  <div class="code"><pre>compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">*</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+  <span style="color:#080;font-weight:bold">if</span> item.binary?
+    <span style="color:#777"># don’t filter binary items</span>
+  <span style="color:#080;font-weight:bold">else</span>
+   <span style="color:#080;font-weight:bold">case</span> item[<span style="color:#A60">:extension</span>]
+    <span style="color:#080;font-weight:bold">when</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">md</span><span style="color:#710">'</span></span>
+     filter <span style="color:#A60">:redcarpet</span>, <span style="color:#A60">:options</span> =&gt; {<span style="color:#A60">:fenced_code_blocks</span> =&gt; <span style="color:#069">true</span>},<span style="color:#A60">:renderer</span> =&gt; <span style="color:#036;font-weight:bold">MyRedcarpetRenderer</span>
+     layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+    <span style="color:#080;font-weight:bold">when</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">haml</span><span style="color:#710">'</span></span>
+     filter <span style="color:#A60">:haml</span>
+     layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+   <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
 </pre></div>
 </div>
-;T;@':versioni
+
+<ul>
+<li>レイアウト用のフィルターにhaml、記事用のフィルターにredcarpetを使っている。</li>
+<li>MyRedcarpetRendererはコードのハイライト用にcoderay使うためのラッパーでlib/default.rbに書いた</li>
+</ul>
+<div class="CodeRay">
+  <div class="code"><pre>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">redcarpet</span><span style="color:#710">&quot;</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">coderay</span><span style="color:#710">&quot;</span></span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MyRedcarpetRenderer</span> &lt; <span style="color:#036;font-weight:bold">Redcarpet</span>::<span style="color:#036;font-weight:bold">Render</span>::<span style="color:#036;font-weight:bold">XHTML</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">block_code</span>(code, language)
+    <span style="color:#080;font-weight:bold">if</span> language <span style="color:#080;font-weight:bold">then</span>
+      <span style="color:#036;font-weight:bold">CodeRay</span>.scan(code, language).div
+    <span style="color:#080;font-weight:bold">else</span>
+      <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#b0b">\n</span><span style="color:#D20">&lt;pre&gt;&lt;code&gt;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>code<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">&lt;/code&gt;&lt;/pre&gt;</span><span style="color:#b0b">\n</span><span style="color:#710">&quot;</span></span>
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
+
+<p>以下の記事が大変参考になった</p>
+
+<ul>
+<li><a href="http://blog.designrecipe.jp/2010/07/19/nanoc-basic/">静的な Web サイト生成ツール Nanoc 基本編 - まずは試してみる</a></li>
+<li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
+<li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
+</ul>
+;T;@'"/articles/2012-04-28/{;{	;I"<!DOCTYPE html>
+<html>
+  <head>
+    <title>だん死はnikirom</title>
+    <meta content='website description' name='description'>
+    <meta content='nanoc 3.1.6' name='generator'>
+    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='/style/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div id='logo'>
+          <h1>
+            だん死はnikirom
+            <!-- %a{:href => #{item[:title]}} -->
+          </h1>
+          <div class='slogan'>Cool slogan goes here!</div>
+        </div>
+        <div id='menubar'>
+          <ul id='menu'>
+            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+            <li class='current'>
+              <a href='/index.html'>Home</a>
+            </li>
+            <li>
+              <a href='examples.html'>Examples</a>
+            </li>
+            <li>
+              <a href='page.html'>A Page</a>
+            </li>
+            <li>
+              <a href='another_page.html'>Another Page</a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='site_content'>
+        <div id='sidebar_container'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <ul>
+              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
+            </ul>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Newsletter</h3>
+            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
+            <form action='#' id='subscribe' method='post'>
+              <p style='padding: 0 0 9px 0;'>
+                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
+              </p>
+              <p>
+                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
+              </p>
+            </form>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Latest Blog</h3>
+            <h4>Website Goes Live</h4>
+            <h5>1st July 2011</h5>
+            <p>
+              We have just launched our new website. Take a look around, we'd love to know what you think.....
+              <br>
+              <a href='#'>read more</a>
+            </p>
+          </div>
+        </div>
+        <div id='content'>
+          <!-- insert the page content here -->
+          <p>実家のPCサポートするためにさくらのVPS借りて、そこからリモートデスクトップしよう&gt;と思ってたんだけど実家のVistaにリモートデスクトップの環境がなくて断念した。後か&gt;ら考えたらVistaにフリーのvncサーバ入れればよかったんだけどまぁいっかってことでVPSが宙ぶらりんになったしせっかくだから作ってみた。 5/5まで2週間無料だしその日まで
+          の稼動かもしれないのつもりだったけどドメイン取ってしまった。</p>
+          
+          <ul>
+          <li>Ubuntu10.04 32bit</li>
+          <li>Nginx1.2</li>
+          <li>nanoc</li>
+          </ul>
+          
+          <p>力尽きた</p>
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          Copyright c simplestyle_7 
+          <a href='http://validator.w3.org/check?uri=referer'>HTML5</a>
+          |
+          <a href='http://jigsaw.w3.org/css-validator/check/referer'>CSS</a>
+          |
+          <a href='http://www.html5webtemplates.co.uk'>design from HTML5webtemplates.co.uk</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+;T;	I"c実家のPCサポートするためにさくらのVPS借りて、そこからリモートデスクトップしよう>と思ってたんだけど実家のVistaにリモートデスクトップの環境がなくて断念した。後か>ら考えたらVistaにフリーのvncサーバ入れればよかったんだけどまぁいっかってことでVPSが宙ぶらりんになったしせっかくだから作ってみた。 5/5まで2週間無料だしその日まで
+の稼動かもしれないのつもりだったけどドメイン取ってしまった。
+
+- Ubuntu10.04 32bit
+- Nginx1.2
+- nanoc
+
+力尽きた;T;
+I"�<p>実家のPCサポートするためにさくらのVPS借りて、そこからリモートデスクトップしよう&gt;と思ってたんだけど実家のVistaにリモートデスクトップの環境がなくて断念した。後か&gt;ら考えたらVistaにフリーのvncサーバ入れればよかったんだけどまぁいっかってことでVPSが宙ぶらりんになったしせっかくだから作ってみた。 5/5まで2週間無料だしその日まで
+の稼動かもしれないのつもりだったけどドメイン取ってしまった。</p>
+
+<ul>
+<li>Ubuntu10.04 32bit</li>
+<li>Nginx1.2</li>
+<li>nanoc</li>
+</ul>
+
+<p>力尽きた</p>
+;T;@-:versioni

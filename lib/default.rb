@@ -5,7 +5,6 @@ require "redcarpet"
 require "coderay"
 
 class MyRedcarpetRenderer < Redcarpet::Render::XHTML
-  # ～～～中略～～～
   def block_code(code, language)
     if language then
       CodeRay.scan(code, language).div

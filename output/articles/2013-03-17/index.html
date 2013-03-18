@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>simplestyle_7</title>
+    <title>だん死はnikirom</title>
     <meta content='website description' name='description'>
     <meta content='nanoc 3.1.6' name='generator'>
     <meta content='website keywords, website keywords' name='keywords'>
@@ -15,8 +15,8 @@
       <div id='header'>
         <div id='logo'>
           <h1>
-            simplestyle
-            <a href='#'>_7</a>
+            だん死はnikirom
+            <!-- %a{:href => #{item[:title]}} -->
           </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
@@ -47,8 +47,7 @@
           <div class='sidebar'>
             <ul>
               <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
-              <li><a href="/articles/test2/">A New Item</a> 2013-03-17 17:02:05 +0900</li>
-              <li><a href="/articles/test/">test</a> 2013/03/07 15:22</li>
+              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
             </ul>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
@@ -89,13 +88,54 @@
 
 <ul>
 <li>基本的にフィルターに渡す</li>
+<li>itemはnanocで用意されてる。コンパイル対象ファイルの情報を色々持ってる</li>
 </ul></li>
 </ul>
 <div class="CodeRay">
-  <div class="code"><pre> filter <span style="color:#A60">:haml</span>
- layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+  <div class="code"><pre>compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">*</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+  <span style="color:#080;font-weight:bold">if</span> item.binary?
+    <span style="color:#777"># don’t filter binary items</span>
+  <span style="color:#080;font-weight:bold">else</span>
+   <span style="color:#080;font-weight:bold">case</span> item[<span style="color:#A60">:extension</span>]
+    <span style="color:#080;font-weight:bold">when</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">md</span><span style="color:#710">'</span></span>
+     filter <span style="color:#A60">:redcarpet</span>, <span style="color:#A60">:options</span> =&gt; {<span style="color:#A60">:fenced_code_blocks</span> =&gt; <span style="color:#069">true</span>},<span style="color:#A60">:renderer</span> =&gt; <span style="color:#036;font-weight:bold">MyRedcarpetRenderer</span>
+     layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+    <span style="color:#080;font-weight:bold">when</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">haml</span><span style="color:#710">'</span></span>
+     filter <span style="color:#A60">:haml</span>
+     layout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">default</span><span style="color:#710">'</span></span>
+   <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
 </pre></div>
 </div>
+
+<ul>
+<li>レイアウト用のフィルターにhaml、記事用のフィルターにredcarpetを使っている。</li>
+<li>MyRedcarpetRendererはコードのハイライト用にcoderay使うためのラッパーでlib/default.rbに書いた</li>
+</ul>
+<div class="CodeRay">
+  <div class="code"><pre>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">redcarpet</span><span style="color:#710">&quot;</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">coderay</span><span style="color:#710">&quot;</span></span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MyRedcarpetRenderer</span> &lt; <span style="color:#036;font-weight:bold">Redcarpet</span>::<span style="color:#036;font-weight:bold">Render</span>::<span style="color:#036;font-weight:bold">XHTML</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">block_code</span>(code, language)
+    <span style="color:#080;font-weight:bold">if</span> language <span style="color:#080;font-weight:bold">then</span>
+      <span style="color:#036;font-weight:bold">CodeRay</span>.scan(code, language).div
+    <span style="color:#080;font-weight:bold">else</span>
+      <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#b0b">\n</span><span style="color:#D20">&lt;pre&gt;&lt;code&gt;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>code<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">&lt;/code&gt;&lt;/pre&gt;</span><span style="color:#b0b">\n</span><span style="color:#710">&quot;</span></span>
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
+
+<p>以下の記事が大変参考になった</p>
+
+<ul>
+<li><a href="http://blog.designrecipe.jp/2010/07/19/nanoc-basic/">静的な Web サイト生成ツール Nanoc 基本編 - まずは試してみる</a></li>
+<li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
+<li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
+</ul>
         </div>
       </div>
       <div id='footer'>
