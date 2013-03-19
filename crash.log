@@ -1,68 +1,8 @@
-Crashlog created at 2013-03-17 23:08:19 +0900
+Crashlog created at 2013-03-20 01:42:22 +0900
 
 ===== MESSAGE:
 
-Haml::SyntaxError: layout /default/:38: unknown regexp options - tyl
-layout /default/:38: syntax error, unexpected tSTRING_BEG, expecting '}'
-...lip' src='/style/paperclip.png'>\n          <div class='side...
-...                               ^
-layout /default/:38: syntax error, unexpected tIDENTIFIER, expecting '}'
-...\n          <div class='sidebar'>\n            <h3>Newslette...
-...                               ^
-layout /default/:38: syntax error, unexpected tCONSTANT, expecting '}'
-...il address and click 'Subscribe'.</p>\n            <form#{
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...              <p style='padding: 0 0 9px 0;'>\n             ...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...           <input class='search' name='email_address' onclic...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...ss='search' name='email_address' onclick=\"javascript: docum...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...ript: document.forms['subscribe'].email_address.value=''\" t...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...l_address.value=''\" type='text' value='your email address'>...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...ue=''\" type='text' value='your email address'>\n           ...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...        <input class='subscribe' name='subscribe' type='subm...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...ass='subscribe' name='subscribe' type='submit' value='Subscr...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...' name='subscribe' type='submit' value='Subscribe'>\n       ...
-...                               ^
-layout /default/:42: syntax error, unexpected tCONSTANT, expecting '}'
-... type='submit' value='Subscribe'>\n              </p>\n     ...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...\n          <img alt='paperclip' class='paperclip' src='/sty...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...lt='paperclip' class='paperclip' src='/style/paperclip.png'>...
-...                               ^
-layout /default/:42: syntax error, unexpected tSTRING_BEG, expecting '}'
-...lip' src='/style/paperclip.png'>\n          <div class='side...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...\n          <div class='sidebar'>\n            <h3>Latest Bl...
-...                               ^
-layout /default/:42: syntax error, unexpected tIDENTIFIER, expecting '}'
-...bsite. Take a look around, we'd love to know what you think....
-...                               ^
-layout /default/:42: syntax error, unexpected tDOT2
-...ove to know what you think.....\n              <br>\n       ...
-...                               ^
-layout /default/:42: syntax error, unexpected $undefined
-...think.....\n              <br>\n              <a#{_hamlout.a...
-...                               ^
+Haml::SyntaxError: Illegal nesting: content can't be both given on the same line as %h1 and nested within it.
 
 ===== COMPILATION STACK:
 
@@ -70,39 +10,43 @@ layout /default/:42: syntax error, unexpected $undefined
 
 ===== STACK TRACE:
 
-  0. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/engine.rb:131:in `rescue in render'
-  1. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/engine.rb:128:in `render'
-  2. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/filters/haml.rb:23:in `run'
-  3. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
-  4. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/result_data/item_rep.rb:401:in `layout'
-  5. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
-  6. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
-  7. ./Rules:35:in `block in load'
-  8. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
-  9. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
-  10. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
-  11. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
-  12. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
-  13. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
-  14. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:89:in `run'
-  15. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:58:in `compile'
-  16. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/commands/compile.rb:325:in `run'
-  17. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:14:in `block in call'
-  18. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  19. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  20. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:13:in `call'
-  21. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
-  22. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
-  23. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
-  24. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
-  25. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
-  26. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:52:in `block in run'
-  27. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  28. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  29. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:50:in `run'
-  30. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/bin/nanoc:19:in `<top (required)>'
-  31. /usr/local/bin/nanoc:19:in `load'
-  ... 34 more lines omitted. See full crash log for details.
+  0. layout /default/:57
+  1. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:394:in `tag'
+  2. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:214:in `process_line'
+  3. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/parser.rb:122:in `parse'
+  4. /var/lib/gems/1.9.1/gems/haml-4.0.0/lib/haml/engine.rb:66:in `initialize'
+  5. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/filters/haml.rb:23:in `new'
+  6. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/filters/haml.rb:23:in `run'
+  7. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  8. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/result_data/item_rep.rb:401:in `layout'
+  9. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  10. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
+  11. ./Rules:35:in `block in load'
+  12. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  13. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  14. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
+  15. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
+  16. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
+  17. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
+  18. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  19. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  20. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/commands/compile.rb:325:in `run'
+  21. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  22. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  23. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  24. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/command_runner.rb:13:in `call'
+  25. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  26. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  27. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  28. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  29. /var/lib/gems/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  30. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:52:in `block in run'
+  31. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  32. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  33. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/lib/nanoc/cli.rb:50:in `run'
+  34. /var/lib/gems/1.9.1/gems/nanoc-3.6.1/bin/nanoc:19:in `<top (required)>'
+  35. /usr/local/bin/nanoc:19:in `load'
+  ... 38 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
@@ -145,8 +89,8 @@ PATH => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 PWD => "/home/mori/test"
 SHELL => "/bin/bash"
 SHLVL => "2"
-SSH_CLIENT => "192.168.0.4 57343 22"
-SSH_CONNECTION => "192.168.0.4 57343 192.168.0.5 22"
+SSH_CLIENT => "192.168.0.4 64495 22"
+SSH_CONNECTION => "192.168.0.4 64495 192.168.0.5 22"
 SSH_TTY => "/dev/pts/0"
 TERM => "xterm"
 USER => "mori"

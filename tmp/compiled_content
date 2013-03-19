@@ -656,7 +656,7 @@ table
       color: #111
       border-top: 1px solid #FFF
 ;T:pre@
-"/{;{	;I" <!DOCTYPE html>
+"/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -672,10 +672,7 @@ table
     <div id='main'>
       <div id='header'>
         <div id='logo'>
-          <h1>
-            だん死はnikirom
-            <!-- %a{:href => #{item[:title]}} -->
-          </h1>
+          <h1>だん死はnikirom</h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
         <div id='menubar'>
@@ -735,6 +732,7 @@ table
         </div>
         <div id='content'>
           <!-- insert the page content here -->
+          <h1></h1>
           <h2><a href="/articles/2013-03-17/">メモ</a></h2>
           <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
           
@@ -1163,7 +1161,7 @@ I"~<h1>haml</h1>
 </html>
 ;T;	I"Hi, I'm a new item!;T;
 I"$<p>Hi, I&#39;m a new item!</p>
-;T;@!"/articles/2013-03-17/{;{	;I"_!<!DOCTYPE html>
+;T;@!"/articles/2013-03-17/{;{	;I"/!<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -1179,10 +1177,7 @@ I"$<p>Hi, I&#39;m a new item!</p>
     <div id='main'>
       <div id='header'>
         <div id='logo'>
-          <h1>
-            だん死はnikirom
-            <!-- %a{:href => #{item[:title]}} -->
-          </h1>
+          <h1>だん死はnikirom</h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
         <div id='menubar'>
@@ -1242,6 +1237,7 @@ I"$<p>Hi, I&#39;m a new item!</p>
         </div>
         <div id='content'>
           <!-- insert the page content here -->
+          <h1>メモ</h1>
           <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
 
 <p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
@@ -1422,7 +1418,7 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
 <li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
 <li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
 </ul>
-;T;@'"/articles/2012-04-28/{;{	;I"<!DOCTYPE html>
+;T;@'"/articles/2012-04-28/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -1438,10 +1434,7 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
     <div id='main'>
       <div id='header'>
         <div id='logo'>
-          <h1>
-            だん死はnikirom
-            <!-- %a{:href => #{item[:title]}} -->
-          </h1>
+          <h1>だん死はnikirom</h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
         <div id='menubar'>
@@ -1501,6 +1494,7 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
         </div>
         <div id='content'>
           <!-- insert the page content here -->
+          <h1>Home</h1>
           <p>実家のPCサポートするためにさくらのVPS借りて、そこからリモートデスクトップしよう&gt;と思ってたんだけど実家のVistaにリモートデスクトップの環境がなくて断念した。後か&gt;ら考えたらVistaにフリーのvncサーバ入れればよかったんだけどまぁいっかってことでVPSが宙ぶらりんになったしせっかくだから作ってみた。 5/5まで2週間無料だしその日まで
           の稼動かもしれないのつもりだったけどドメイン取ってしまった。</p>
           
