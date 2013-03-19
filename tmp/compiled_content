@@ -656,7 +656,7 @@ table
       color: #111
       border-top: 1px solid #FFF
 ;T:pre@
-"/{;{	;I"�<!DOCTYPE html>
+"/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -700,10 +700,9 @@ table
         <div id='sidebar_container'>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
-            <ul>
-              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
-              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
-            </ul>
+            <h3>Latest</h3>
+            <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+            <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
@@ -1161,7 +1160,7 @@ I"~<h1>haml</h1>
 </html>
 ;T;	I"Hi, I'm a new item!;T;
 I"$<p>Hi, I&#39;m a new item!</p>
-;T;@!"/articles/2013-03-17/{;{	;I"/!<!DOCTYPE html>
+;T;@!"/articles/2013-03-17/{;{	;I"$!<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -1205,10 +1204,9 @@ I"$<p>Hi, I&#39;m a new item!</p>
         <div id='sidebar_container'>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
-            <ul>
-              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
-              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
-            </ul>
+            <h3>Latest</h3>
+            <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+            <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
@@ -1418,7 +1416,7 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
 <li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
 <li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
 </ul>
-;T;@'"/articles/2012-04-28/{;{	;I"�<!DOCTYPE html>
+;T;@'"/articles/2012-04-28/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -1462,10 +1460,9 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
         <div id='sidebar_container'>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
-            <ul>
-              <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
-              <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
-            </ul>
+            <h3>Latest</h3>
+            <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+            <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
