@@ -326,3 +326,6 @@ table {
     background: #fbfbfb;
     color: #111111;
     border-top: 1px solid white; }
+
+.CodeRay {
+  font: normal normal normal 115%/150% "Source Code Pro", sans-serif; }

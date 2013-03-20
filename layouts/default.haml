@@ -2,12 +2,11 @@
 %html
   %head
     %title だん死はnikirom
-    %meta{:content => "website description", :name => "description"}/
-    %meta{:content => "nanoc 3.1.6", :name => "generator"}/
-    %meta{:content => "website keywords, website keywords", :name => "keywords"}/
+    %meta{:content => "nanoc 3.6.1", :name => "generator"}/
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Tangerine&v1", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Source+Code+Pro", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/style/style.css", :rel => "stylesheet", :type => "text/css"}/
   %body
     #main
@@ -53,8 +52,13 @@
               %a{:href => "#"} read more
         #content
           / insert the page content here
-          %h1= item[:title]
+          - if item[:title] != nil
+            %h1= item[:title]
           = yield
+          - if item[:title] != nil
+            = prev_link
+          - if item[:title] != nil
+            = next_link
       #footer
         %p
           Copyright c simplestyle_7 |

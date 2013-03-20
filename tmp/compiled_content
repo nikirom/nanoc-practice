@@ -1,4 +1,4 @@
-{:	data{"/stylesheet/{:default{:	lastI"#html {
+{:	data{"/stylesheet/{:default{:	lastI"whtml {
   height: 100%; }
 
 * {
@@ -326,7 +326,10 @@ table {
     background: #fbfbfb;
     color: #111111;
     border-top: 1px solid white; }
-:ET:rawI"html
+
+.CodeRay {
+  font: normal normal normal 115%/150% "Source Code Pro", sans-serif; }
+:ET:rawI"Yhtml
   height: 100%
 
 *
@@ -655,17 +658,20 @@ table
       background: #FBFBFB
       color: #111
       border-top: 1px solid #FFF
+
+.CodeRay
+  font: normal normal normal 115%/150% 'Source Code Pro', sans-serif
+  
 ;T:pre@
-"/{;{	;I"�<!DOCTYPE html>
+"/{;{	;I"�<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
-    <meta content='website description' name='description'>
-    <meta content='nanoc 3.1.6' name='generator'>
-    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='nanoc 3.6.1' name='generator'>
     <meta content='text/html; charset=utf-8' http-equiv='content-type'>
     <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href='/style/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -731,7 +737,6 @@ table
         </div>
         <div id='content'>
           <!-- insert the page content here -->
-          <h1></h1>
           <h2><a href="/articles/2013-03-17/">メモ</a></h2>
           <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
           
@@ -1160,16 +1165,15 @@ I"~<h1>haml</h1>
 </html>
 ;T;	I"Hi, I'm a new item!;T;
 I"$<p>Hi, I&#39;m a new item!</p>
-;T;@!"/articles/2013-03-17/{;{	;I"$!<!DOCTYPE html>
+;T;@!"/articles/2013-03-17/{;{	;I"d!<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
-    <meta content='website description' name='description'>
-    <meta content='nanoc 3.1.6' name='generator'>
-    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='nanoc 3.6.1' name='generator'>
     <meta content='text/html; charset=utf-8' http-equiv='content-type'>
     <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href='/style/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -1295,6 +1299,8 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
 <li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
 <li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
 </ul>
+          <a class="prev" href="/articles/2012-04-28/">&laquo;[Older] Home</a>
+          
         </div>
       </div>
       <div id='footer'>
@@ -1416,16 +1422,15 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
 <li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
 <li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
 </ul>
-;T;@'"/articles/2012-04-28/{;{	;I"�<!DOCTYPE html>
+;T;@'"/articles/2012-04-28/{;{	;I"<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
-    <meta content='website description' name='description'>
-    <meta content='nanoc 3.1.6' name='generator'>
-    <meta content='website keywords, website keywords' name='keywords'>
+    <meta content='nanoc 3.6.1' name='generator'>
     <meta content='text/html; charset=utf-8' http-equiv='content-type'>
     <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href='/style/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -1502,6 +1507,8 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
           </ul>
           
           <p>力尽きた</p>
+          
+          <a class="next" href="/articles/2013-03-17/">メモ [Newer]&raquo;</a>
         </div>
       </div>
       <div id='footer'>
