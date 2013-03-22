@@ -1,4 +1,4 @@
-{:	data{"/stylesheet/{:default{:	lastI"whtml {
+{:	data{"/stylesheet/{:default{:	lastI"whtml {
   height: 100%; }
 
 * {
@@ -329,7 +329,7 @@ table {
 
 .CodeRay {
   font: normal normal normal 115%/150% "Source Code Pro", sans-serif; }
-:ET:rawI"Yhtml
+:ET:rawI"Vhtml
   height: 100%
 
 *
@@ -661,9 +661,8 @@ table
 
 .CodeRay
   font: normal normal normal 115%/150% 'Source Code Pro', sans-serif
-  
 ;T:pre@
-"/{;{	;I"�<!DOCTYPE html>
+"/{;{	;I"^<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -678,28 +677,23 @@ table
     <div id='main'>
       <div id='header'>
         <div id='logo'>
-          <h1>だん死はnikirom</h1>
+          <h1>
+            <a href='/index.html'>だん死はnikirom</a>
+          </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
         <div id='menubar'>
-          <ul id='menu'>
-            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
-            <li class='current'>
-              <a href='/index.html'>Home</a>
-            </li>
-            <li>
-              <a href='examples.html'>Examples</a>
-            </li>
-            <li>
-              <a href='page.html'>A Page</a>
-            </li>
-            <li>
-              <a href='another_page.html'>Another Page</a>
-            </li>
-            <li>
-              <a href='contact.html'>Contact Us</a>
-            </li>
-          </ul>
+          <ul id='menu'></ul>
+          <!-- %li.current -->
+          <!-- %a{:href => "/index.html"} Home -->
+          <!-- %li -->
+          <!-- %a{:href => "examples.html"} Examples -->
+          <!-- %li -->
+          <!-- %a{:href => "page.html"} A Page -->
+          <!-- %li -->
+          <!-- %a{:href => "another_page.html"} Another Page -->
+          <!-- %li -->
+          <!-- %a{:href => "contact.html"} Contact Us -->
         </div>
       </div>
       <div id='site_content'>
@@ -707,36 +701,22 @@ table
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
             <h3>Latest</h3>
+            <li><a href="/articles/2013-03-23/">GJ部</a> 2013/03/23 04:19:29</li>
             <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
             <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
-            <h3>Newsletter</h3>
-            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
-            <form action='#' id='subscribe' method='post'>
-              <p style='padding: 0 0 9px 0;'>
-                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
-              </p>
-              <p>
-                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
-              </p>
-            </form>
-          </div>
-          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
-          <div class='sidebar'>
-            <h3>Latest Blog</h3>
-            <h4>Website Goes Live</h4>
-            <h5>1st July 2011</h5>
-            <p>
-              We have just launched our new website. Take a look around, we'd love to know what you think.....
-              <br>
-              <a href='#'>read more</a>
-            </p>
+            <a class='twitter-timeline' data-widget-id='315184046252621824' href='https://twitter.com/nnikirom'>Tweets by @nnikirom</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
           </div>
         </div>
         <div id='content'>
           <!-- insert the page content here -->
+          <h2><a href="/articles/2013-03-23/">GJ部</a></h2>
+          
           <h2><a href="/articles/2013-03-17/">メモ</a></h2>
           <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
           
@@ -779,7 +759,9 @@ table
   - else
     = article.compiled_content
 ;T;
-I":<h2><a href="/articles/2013-03-17/">メモ</a></h2>
+I"n<h2><a href="/articles/2013-03-23/">GJ部</a></h2>
+
+<h2><a href="/articles/2013-03-17/">メモ</a></h2>
 <p>毎回ググるのだるいし、一回覚えたのに時間経過とともに忘れてしまった時用のメモ</p>
 
 <p>ちなみにこれはnanocで書き出して静的にnginxで静的に配信してます</p>
@@ -1165,7 +1147,7 @@ I"~<h1>haml</h1>
 </html>
 ;T;	I"Hi, I'm a new item!;T;
 I"$<p>Hi, I&#39;m a new item!</p>
-;T;@!"/articles/2013-03-17/{;{	;I"d!<!DOCTYPE html>
+;T;@!"/articles/2013-03-17/{;{	;I"< <!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -1180,28 +1162,26 @@ I"$<p>Hi, I&#39;m a new item!</p>
     <div id='main'>
       <div id='header'>
         <div id='logo'>
-          <h1>だん死はnikirom</h1>
+          <h1>
+            <a href='/index.html'>だん死はnikirom</a>
+          </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
         <div id='menubar'>
-          <ul id='menu'>
-            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
-            <li class='current'>
-              <a href='/index.html'>Home</a>
-            </li>
-            <li>
-              <a href='examples.html'>Examples</a>
-            </li>
-            <li>
-              <a href='page.html'>A Page</a>
-            </li>
-            <li>
-              <a href='another_page.html'>Another Page</a>
-            </li>
-            <li>
-              <a href='contact.html'>Contact Us</a>
-            </li>
-          </ul>
+          <ul id='menu'></ul>
+          <a class="prev" href="/articles/2012-04-28/">&laquo;[Older] Home</a>
+          <a class="next" href="/articles/2013-03-23/">GJ部 [Newer]&raquo;</a>
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <!-- %li.current -->
+          <!-- %a{:href => "/index.html"} Home -->
+          <!-- %li -->
+          <!-- %a{:href => "examples.html"} Examples -->
+          <!-- %li -->
+          <!-- %a{:href => "page.html"} A Page -->
+          <!-- %li -->
+          <!-- %a{:href => "another_page.html"} Another Page -->
+          <!-- %li -->
+          <!-- %a{:href => "contact.html"} Contact Us -->
         </div>
       </div>
       <div id='site_content'>
@@ -1209,32 +1189,16 @@ I"$<p>Hi, I&#39;m a new item!</p>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
             <h3>Latest</h3>
+            <li><a href="/articles/2013-03-23/">GJ部</a> 2013/03/23 04:19:29</li>
             <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
             <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
-            <h3>Newsletter</h3>
-            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
-            <form action='#' id='subscribe' method='post'>
-              <p style='padding: 0 0 9px 0;'>
-                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
-              </p>
-              <p>
-                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
-              </p>
-            </form>
-          </div>
-          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
-          <div class='sidebar'>
-            <h3>Latest Blog</h3>
-            <h4>Website Goes Live</h4>
-            <h5>1st July 2011</h5>
-            <p>
-              We have just launched our new website. Take a look around, we'd love to know what you think.....
-              <br>
-              <a href='#'>read more</a>
-            </p>
+            <a class='twitter-timeline' data-widget-id='315184046252621824' href='https://twitter.com/nnikirom'>Tweets by @nnikirom</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
           </div>
         </div>
         <div id='content'>
@@ -1300,7 +1264,7 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
 <li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
 </ul>
           <a class="prev" href="/articles/2012-04-28/">&laquo;[Older] Home</a>
-          
+          <a class="next" href="/articles/2013-03-23/">GJ部 [Newer]&raquo;</a>
         </div>
       </div>
       <div id='footer'>
@@ -1422,7 +1386,7 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
 <li><a href="http://n.blueblack.net/articles/2012-05-03_02_nanoc_getting_started/">nanoc導入メモ 1/5 「Getting Started」編</a></li>
 <li><a href="http://www.mk-mode.com/octopress/2013/01/30/nanoc-routing-when-compile/">Nanoc - コンパイル時のルーティング設定！</a></li>
 </ul>
-;T;@'"/articles/2012-04-28/{;{	;I"<!DOCTYPE html>
+;T;@'"/articles/2012-04-28/{;{	;I"c<!DOCTYPE html>
 <html>
   <head>
     <title>だん死はnikirom</title>
@@ -1437,28 +1401,26 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
     <div id='main'>
       <div id='header'>
         <div id='logo'>
-          <h1>だん死はnikirom</h1>
+          <h1>
+            <a href='/index.html'>だん死はnikirom</a>
+          </h1>
           <div class='slogan'>Cool slogan goes here!</div>
         </div>
         <div id='menubar'>
-          <ul id='menu'>
-            <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
-            <li class='current'>
-              <a href='/index.html'>Home</a>
-            </li>
-            <li>
-              <a href='examples.html'>Examples</a>
-            </li>
-            <li>
-              <a href='page.html'>A Page</a>
-            </li>
-            <li>
-              <a href='another_page.html'>Another Page</a>
-            </li>
-            <li>
-              <a href='contact.html'>Contact Us</a>
-            </li>
-          </ul>
+          <ul id='menu'></ul>
+          
+          <a class="next" href="/articles/2013-03-17/">メモ [Newer]&raquo;</a>
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <!-- %li.current -->
+          <!-- %a{:href => "/index.html"} Home -->
+          <!-- %li -->
+          <!-- %a{:href => "examples.html"} Examples -->
+          <!-- %li -->
+          <!-- %a{:href => "page.html"} A Page -->
+          <!-- %li -->
+          <!-- %a{:href => "another_page.html"} Another Page -->
+          <!-- %li -->
+          <!-- %a{:href => "contact.html"} Contact Us -->
         </div>
       </div>
       <div id='site_content'>
@@ -1466,32 +1428,16 @@ require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
             <h3>Latest</h3>
+            <li><a href="/articles/2013-03-23/">GJ部</a> 2013/03/23 04:19:29</li>
             <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
             <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
           </div>
           <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
           <div class='sidebar'>
-            <h3>Newsletter</h3>
-            <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
-            <form action='#' id='subscribe' method='post'>
-              <p style='padding: 0 0 9px 0;'>
-                <input class='search' name='email_address' onclick="javascript: document.forms['subscribe'].email_address.value=''" type='text' value='your email address'>
-              </p>
-              <p>
-                <input class='subscribe' name='subscribe' type='submit' value='Subscribe'>
-              </p>
-            </form>
-          </div>
-          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
-          <div class='sidebar'>
-            <h3>Latest Blog</h3>
-            <h4>Website Goes Live</h4>
-            <h5>1st July 2011</h5>
-            <p>
-              We have just launched our new website. Take a look around, we'd love to know what you think.....
-              <br>
-              <a href='#'>read more</a>
-            </p>
+            <a class='twitter-timeline' data-widget-id='315184046252621824' href='https://twitter.com/nnikirom'>Tweets by @nnikirom</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
           </div>
         </div>
         <div id='content'>
@@ -1542,4 +1488,80 @@ I"�<p>実家のPCサポートするためにさくらのVPS借りて、そこ�
 </ul>
 
 <p>力尽きた</p>
-;T;@-:versioni
+;T;@-"/articles/2013-03-23/{;{	;I"s<!DOCTYPE html>
+<html>
+  <head>
+    <title>だん死はnikirom</title>
+    <meta content='nanoc 3.6.1' name='generator'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine&amp;v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href='/style/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='header'>
+        <div id='logo'>
+          <h1>
+            <a href='/index.html'>だん死はnikirom</a>
+          </h1>
+          <div class='slogan'>Cool slogan goes here!</div>
+        </div>
+        <div id='menubar'>
+          <ul id='menu'></ul>
+          <a class="prev" href="/articles/2013-03-17/">&laquo;[Older] メモ</a>
+          
+          <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+          <!-- %li.current -->
+          <!-- %a{:href => "/index.html"} Home -->
+          <!-- %li -->
+          <!-- %a{:href => "examples.html"} Examples -->
+          <!-- %li -->
+          <!-- %a{:href => "page.html"} A Page -->
+          <!-- %li -->
+          <!-- %a{:href => "another_page.html"} Another Page -->
+          <!-- %li -->
+          <!-- %a{:href => "contact.html"} Contact Us -->
+        </div>
+      </div>
+      <div id='site_content'>
+        <div id='sidebar_container'>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <h3>Latest</h3>
+            <li><a href="/articles/2013-03-23/">GJ部</a> 2013/03/23 04:19:29</li>
+            <li><a href="/articles/2013-03-17/">メモ</a> 2013/03/17 18:17:51</li>
+            <li><a href="/articles/2012-04-28/">Home</a> 2012/04/28 00:30:31</li>
+          </div>
+          <img alt='paperclip' class='paperclip' src='/style/paperclip.png'>
+          <div class='sidebar'>
+            <a class='twitter-timeline' data-widget-id='315184046252621824' href='https://twitter.com/nnikirom'>Tweets by @nnikirom</a>
+            <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+          </div>
+        </div>
+        <div id='content'>
+          <!-- insert the page content here -->
+          <h1>GJ部</h1>
+          
+          <a class="prev" href="/articles/2013-03-17/">&laquo;[Older] メモ</a>
+          
+        </div>
+      </div>
+      <div id='footer'>
+        <p>
+          Copyright c simplestyle_7 
+          <a href='http://validator.w3.org/check?uri=referer'>HTML5</a>
+          |
+          <a href='http://jigsaw.w3.org/css-validator/check/referer'>CSS</a>
+          |
+          <a href='http://www.html5webtemplates.co.uk'>design from HTML5webtemplates.co.uk</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+;T;	I" ;F;
+I" ;F;@3:versioni

@@ -12,21 +12,25 @@
     #main
       #header
         #logo
-          %h1 だん死はnikirom
+          %h1 
+            %a{:href => "/index.html"} だん死はnikirom
           .slogan Cool slogan goes here!
         #menubar
           %ul#menu
+          - if item[:title] != nil
+            = prev_link
+            = next_link
             / put class="current" in the li tag for the selected page - to highlight which page you're on
-            %li.current
-              %a{:href => "/index.html"} Home
-            %li
-              %a{:href => "examples.html"} Examples
-            %li
-              %a{:href => "page.html"} A Page
-            %li
-              %a{:href => "another_page.html"} Another Page
-            %li
-              %a{:href => "contact.html"} Contact Us
+          /  %li.current
+          /    %a{:href => "/index.html"} Home
+          /  %li
+          /    %a{:href => "examples.html"} Examples
+          /  %li
+          /    %a{:href => "page.html"} A Page
+          /  %li
+          /    %a{:href => "another_page.html"} Another Page
+          /  %li
+          /    %a{:href => "contact.html"} Contact Us
       #site_content
         #sidebar_container
           %img.paperclip{:alt => "paperclip", :src => "/style/paperclip.png"}/
@@ -34,22 +38,9 @@
             = render('_article_list')
           %img.paperclip{:alt => "paperclip", :src => "/style/paperclip.png"}/
           .sidebar
-            %h3 Newsletter
-            %p If you would like to receive our newletter, please enter your email address and click 'Subscribe'.
-            %form#subscribe{:action => "#", :method => "post"}
-              %p{:style => "padding: 0 0 9px 0;"}
-                %input.search{:name => "email_address", :onclick => "javascript: document.forms['subscribe'].email_address.value=''", :type => "text", :value => "your email address"}/
-              %p
-                %input.subscribe{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
-          %img.paperclip{:alt => "paperclip", :src => "/style/paperclip.png"}/
-          .sidebar
-            %h3 Latest Blog
-            %h4 Website Goes Live
-            %h5 1st July 2011
-            %p
-              We have just launched our new website. Take a look around, we'd love to know what you think.....
-              %br/
-              %a{:href => "#"} read more
+            %a.twitter-timeline{"data-widget-id" => "315184046252621824", :href => "https://twitter.com/nnikirom"} Tweets by @nnikirom
+            :javascript
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
         #content
           / insert the page content here
           - if item[:title] != nil
@@ -57,7 +48,6 @@
           = yield
           - if item[:title] != nil
             = prev_link
-          - if item[:title] != nil
             = next_link
       #footer
         %p
